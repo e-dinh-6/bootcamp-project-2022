@@ -30,10 +30,12 @@ const blogs: blog[] = [
 
 const blogContainer = document.querySelector(".blog-container");
 blogs.forEach((blog) => {
-  const blogPage = document.createElement("div");
+  const blogLink = document.createElement("a");
+  blogLink.href = `${blog.slug}.html`;
 
+  const blogPage = document.createElement("div");
   const blogTitle = document.createElement("h1");
-  blogTitle.innerHTML = blog["title"];
+  blogTitle.innerHTML = blog.title;
   const blogDate = document.createElement("h3");
   blogDate.innerHTML = blog["date"];
   const blogDesc = document.createElement("p");
@@ -45,5 +47,8 @@ blogs.forEach((blog) => {
   blogPage.appendChild(blogDate);
   blogPage.appendChild(blogDesc);
   blogPage.appendChild(blogImg);
-  blogContainer.appendChild(blogPage);
+
+  blogLink.appendChild(blogPage);
+
+  blogContainer.appendChild(blogLink);
 });

@@ -18,9 +18,11 @@ var blogs = [
 ];
 var blogContainer = document.querySelector(".blog-container");
 blogs.forEach(function (blog) {
+    var blogLink = document.createElement("a");
+    blogLink.href = "".concat(blog.slug, ".html");
     var blogPage = document.createElement("div");
     var blogTitle = document.createElement("h1");
-    blogTitle.innerHTML = blog["title"];
+    blogTitle.innerHTML = blog.title;
     var blogDate = document.createElement("h3");
     blogDate.innerHTML = blog["date"];
     var blogDesc = document.createElement("p");
@@ -31,5 +33,8 @@ blogs.forEach(function (blog) {
     blogPage.appendChild(blogDate);
     blogPage.appendChild(blogDesc);
     blogPage.appendChild(blogImg);
-    blogContainer.appendChild(blogPage);
+    blogLink.appendChild(blogPage);
+    blogLink.style.padding = "20px ";
+    blogLink.style.border = "5px";
+    blogContainer.appendChild(blogLink);
 });

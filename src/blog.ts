@@ -9,21 +9,41 @@ type blog = {
 
 const blogs: blog[] = [
   {
-    title: "Blog Example 1",
-    date: "06-19-2024",
-    description: "this is a description",
-    image: "./image/me.png",
-    imageAlt: "example of image alt",
-    slug: "https://example.com/blogs/how-to-build-a-react-application-in-2024",
+    title: "The Easiest Bread To Make",
+    date: "10-24-2024",
+    description:
+      "With no work or effort, focaccia can be right at your fingertips in minutes",
+    image: "images/focaccia.jpg",
+    imageAlt: "focaccia with roasted garlic and tomatoes",
+    slug: "blogs/focaccia",
   },
   {
     title: "Thomas Loves Matcha",
     date: "06-19-2024",
-    description: "this is a description",
-    image: "./images/thomas.jpg",
-    imageAlt: "thomas drinking matcha",
-    slug: "https://example.com/blogs/thomas",
+    description:
+      "Thomas Le really loves Matcha latte, here is his personal recipe",
+    image: "images/thomas.jpg",
+    imageAlt: "thomas",
+    slug: "blogs/matcha",
   },
 ];
 
-const blogContainer = document.getElementById("blog-container");
+const blogContainer = document.querySelector(".blog-container");
+blogs.forEach((blog) => {
+  const blogPage = document.createElement("div");
+
+  const blogTitle = document.createElement("h1");
+  blogTitle.innerHTML = blog["title"];
+  const blogDate = document.createElement("h3");
+  blogDate.innerHTML = blog["date"];
+  const blogDesc = document.createElement("p");
+  blogDesc.innerHTML = blog["description"];
+  const blogImg = document.createElement("img");
+  blogImg.src = blog["image"];
+
+  blogPage.appendChild(blogTitle);
+  blogPage.appendChild(blogDate);
+  blogPage.appendChild(blogDesc);
+  blogPage.appendChild(blogImg);
+  blogContainer.appendChild(blogPage);
+});

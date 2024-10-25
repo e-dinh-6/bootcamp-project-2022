@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Patua+One&display=swap");
 
-:root {
-  /* variables */
+/* :root {
   --cg-black: #c96868;
   --cg-blue: #7eacb5;
   --cg-grey: #fff4ea;
   --cg-white: #fff4ea;
-}
+} */
 /* source for color palette: https://colorhunt.co/palette/c96868fadfa1fff4ea7eacb5 */
 
 html {
@@ -81,6 +80,21 @@ body {
 
 .logo a:hover {
   text-decoration: None;
+}
+
+.blog-container h1 {
+  font-size: 30px;
+}
+
+.blog-container img {
+  width: 500px;
+  height: auto;
+}
+
+.blog-image {
+  width: 900px;
+  height: auto;
+  border: 5px solid black;
 }
 
 main {

@@ -10,24 +10,28 @@ export default function Navbar() {
     // change all the "class" to "className"
     <header className={style.navbar}>
       <h1 className={style.logo}>
-        <a href="/">Emi Dinh</a>
+        <Link href="/">
+          Emi
+          <br />
+          Dinh
+        </Link>
       </h1>
       <nav className={style.navbar}>
         <ul className={style.navlist}>
           <li>
-            <a href="index.html">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="blog.html">Blog</a>
+            <Link href="blog">Blog</Link>
           </li>
           <li>
-            <a href="portfolio.html">Portfolio</a>
+            <Link href="portfolio">Portfolio</Link>
           </li>
           <li>
-            <a href="resume.html">Resume</a>
+            <Link href="resume">Resume</Link>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <Link href="contact">Contact</Link>
           </li>
         </ul>
       </nav>

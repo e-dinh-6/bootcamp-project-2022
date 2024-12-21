@@ -13,7 +13,8 @@ const blogs: blog[] = [
     date: "10-24-2024",
     description:
       "With no work or effort, focaccia can be right at your fingertips in minutes",
-    image: "images/focaccia.jpg",
+    image:
+      "/Users/edinhdawg/Documents/h4i/bootcamp-project-2024/images/focaccia.jpg",
     imageAlt: "focaccia with roasted garlic and tomatoes",
     slug: "blogs/focaccia",
   },
@@ -22,37 +23,11 @@ const blogs: blog[] = [
     date: "06-19-2024",
     description:
       "Thomas Le really loves Matcha latte, here is his personal recipe",
-    image: "images/thomas.jpg",
+    image:
+      "/Users/edinhdawg/Documents/h4i/bootcamp-project-2024/images/thomas.JPG",
     imageAlt: "thomas",
     slug: "blogs/matcha",
   },
 ];
-
-const blogContainer = document.querySelector(".blog-container");
-blogs.forEach((blog) => {
-  const blogLink = document.createElement("a");
-  blogLink.href = `${blog.slug}.html`;
-
-  const blogPage = document.createElement("div");
-  const blogTitle = document.createElement("h1");
-  blogTitle.innerHTML = blog.title;
-  const blogDate = document.createElement("h3");
-  blogDate.innerHTML = blog["date"];
-  const blogDesc = document.createElement("p");
-  blogDesc.innerHTML = blog["description"];
-  const blogImg = document.createElement("img");
-  blogImg.src = blog["image"];
-
-  blogPage.appendChild(blogTitle);
-  blogPage.appendChild(blogDate);
-  blogPage.appendChild(blogDesc);
-  blogPage.appendChild(blogImg);
-
-  blogLink.appendChild(blogPage);
-
-  if (blogContainer) {
-    blogContainer.appendChild(blogLink);
-  }
-});
 
 export default blogs;

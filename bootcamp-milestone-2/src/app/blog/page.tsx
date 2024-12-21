@@ -1,7 +1,7 @@
 import blogs from "@/app/static/blogData";
 import BlogPreview from "@/components/blogPreview";
 import React from "react";
-import styles from "./blog.module.css";
+import styles from "./blogPages.module.css";
 
 export default function Blog() {
   return (

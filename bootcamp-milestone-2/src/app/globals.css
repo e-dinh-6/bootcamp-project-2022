@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: black;
+  color: white; /* Optional: Ensure text is readable */
+  margin: 0; /* Optional: Remove default margin */
+  padding: 0; /* Optional: Remove default padding */
+}

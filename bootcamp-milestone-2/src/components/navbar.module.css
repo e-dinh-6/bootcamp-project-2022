@@ -9,17 +9,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
 
   background-color: var(--cg-black);
   color: var(--cg-white);
   padding: 0px 0px;
-
-  /* Debug border */
-  /* border: solid red; */
 }
 
-.nav-list {
+.navlist {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -27,11 +23,11 @@
   list-style: none;
 
   /* Debug border */
-  /* border: solid blue; */
+  /*border: solid blue;*/
 }
 
 .navbar a {
-  color: var(--cg-white);
+  color: white;
   font-weight: bold;
   margin: 0 12px;
   text-decoration: none;
@@ -41,10 +37,14 @@
 }
 
 .navbar a:hover {
-  color: var(--cg-blue);
+  color: white;
   text-decoration: underline;
 }
 
 .navbar a:active {
-  color: var(--cg-blue);
+  font-weight: bold;
+}
+
+.logo {
+  text-align: left;
 }

@@ -48,7 +48,7 @@
 .projectBox {
   /* border: 2px solid green; */
   height: 500px;
-  width: 30%;
+  width: 70%;
   flex-direction: column;
   text-align: center;
   justify-content: center;
@@ -74,12 +74,4 @@
   background-color: var(--cg-white);
   font-weight: bold;
   font-size: 20px;
-}
-.pageTitle {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 3px;
-  width: 100%;
 }

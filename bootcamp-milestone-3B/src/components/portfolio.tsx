@@ -18,7 +18,7 @@ export default function PortfolioComp({
         src={image}
         alt={imageAlt}
         className="project-image"
-        width={500}
+        width={800}
         height={500}
       ></Image>
       <div className={styles.projectBox}>

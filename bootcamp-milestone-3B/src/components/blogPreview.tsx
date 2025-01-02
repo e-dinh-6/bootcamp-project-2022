@@ -14,9 +14,10 @@ export default async function BlogPreview({
 }: blog) {
   return (
     <div className={style.blogContainer}>
-      <h3 className={style.blogTitle}>{name}</h3>
+      <h3 className={style.blogTitle}>
+        <Link href={`/blog/${slug}`}>{name}</Link>
+      </h3>
       <Image src={image} alt={imageAlt} width={500} height={500}></Image>
     </div>
   );
 }
-<Link href="/blog">blog page</Link>;

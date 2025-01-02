@@ -9,8 +9,6 @@ export default async function Blogs() {
   if (!list_of_blogs) {
     return <div>Blog Not Found</div>;
   } else {
-    console.log(list_of_blogs);
-    list_of_blogs.map((blog, index) => console.log(blog.name));
     return (
       <div className={styles.blogPage}>
         <section className={styles.intro}>

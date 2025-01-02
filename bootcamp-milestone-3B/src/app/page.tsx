@@ -4,11 +4,12 @@ import styles from "./home.module.css";
 export default function Home() {
   return (
     <div className="about">
-      <div className="about-text">
+      <div className={styles.aboutText}>
         <p>
           Hi! My name is Emi Dinh, I am from Sacramento, California. I enjoy
           rock climbing, photography, and videography in my freetime.
         </p>
+        <br />
 
         <p>
           I am passionate about exploring computer science and cybersecurity,
